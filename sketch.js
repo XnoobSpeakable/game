@@ -25,6 +25,8 @@ function draw() {
 text(x, 150, 40);
   textSize(14);
   text('makes the increment add\none more number per click\nCost: 50', 50, 190);
+  textSize(14);
+  text('automatically increments\nthe number once per second\nBuying it multiple times\ndoes nothing\nCost: 50', 150, 190);
 }
 function addnumber() {
   x = x + addnumY;
