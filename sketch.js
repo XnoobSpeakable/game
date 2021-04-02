@@ -27,9 +27,9 @@ function draw() {
 text(x, 150, 40);
   textSize(14);
   text('makes the increment add\none more number per click\nCost:', 50, 190);
-  text(autoinccost, 100, 190)
+  text(autoinccost, 150, 225)
   textSize(14);
-  text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost: 50', 250, 190);
+  text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost:', 250, 190);
 }
 function addnumber() {
   x = x + addnumY;
