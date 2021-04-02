@@ -26,8 +26,8 @@ function draw() {
   textSize(32);
 text(x, 150, 40);
   textSize(14);
-  text('makes the increment add\none more number per click\nCost:', 50, 190);
-  text(autoinccost, 150, 225)
+  text('makes the increment add\none more number per click\nCost: 50', 50, 190);
+  text(autoinccost, 300, 225)
   textSize(14);
   text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost:', 250, 190);
 }
