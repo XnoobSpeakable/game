@@ -42,7 +42,9 @@ function autoinc() {
   if(x > 49) {
     x = x - 50;
     boughtautoinc = 1
-    autoincspeed = autoincspeed / 2
+    autoincspeed = autoincspeed/2
+    window.clearInterval()
+    window.setInterval(fullautoinc, autoincspeed)
     }
   }
   function fullautoinc() {
