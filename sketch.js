@@ -42,6 +42,7 @@ function autoinc() {
   if(x > 49) {
     x = x - 50;
     boughtautoinc = 1
+    autoincspeed = autoincspeed / 2
     }
   }
   function fullautoinc() {
