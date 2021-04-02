@@ -1,7 +1,7 @@
 var x = 0;
 var addnumY = 1;
 var boughtautoinc = 0;
-var autoincspeed = 1000
+var autoincspeed = 2000
 function setup() {
   createCanvas(600, 600);
    button = createButton('increment');
