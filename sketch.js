@@ -1,6 +1,7 @@
 var x = 0;
 var addnumY = 1;
 var boughtautoinc = 0;
+var autoincspeed = 1000
 function setup() {
   createCanvas(600, 600);
    button = createButton('increment');
@@ -16,7 +17,7 @@ function setup() {
   button.position(250, 150);
   button.size(130, 20)
  button.mousePressed(autoinc);
- window.setInterval(fullautoinc, 1000)
+ window.setInterval(fullautoinc, autoincspeed)
 }
 
 function draw() {
@@ -26,7 +27,7 @@ text(x, 150, 40);
   textSize(14);
   text('makes the increment add\none more number per click\nCost: 50', 50, 190);
   textSize(14);
-  text('automatically increments\nthe number once per second\nBuying it multiple times\ndoes nothing\nCost: 50', 250, 190);
+  text('automatically increments\nthe number once per second\nCost: 50', 250, 190);
 }
 function addnumber() {
   x = x + addnumY;
