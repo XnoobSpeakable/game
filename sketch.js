@@ -1,7 +1,22 @@
-var x = 0;
-var addnumY = 1;
-var boughtautoinc = 0;
-var autoincspeed = 2000
+var x = localStorage.getItem("mainnumber")
+if(!x) {
+ x = 0
+}
+var addnumY = localStorage.getItem("upgradenumber")
+if(!addnumY) {
+ addnumY = 1
+}
+var boughtautoinc = localStorage.getItem("haveautoincrement")
+if(!boughtautoinc) {
+ boughtautoinc = 0
+}
+var autoincspeed = localStorage.getItem("speedofautoincrement")
+if(!autoincspeed) {
+}
+var autoinccost = localStorage.getItem("costofautoincrement")
+if(!autoinccost) {
+ autoinccost = 0
+}
 var autoinccost = 50
 function setup() {
   createCanvas(600, 600);
@@ -19,6 +34,10 @@ function setup() {
   button.size(130, 20)
  button.mousePressed(autoinc);
  window.setInterval(fullautoinc, autoincspeed)
+  button = createButton('SAVE');
+  button.position(450, 550);
+  button.size(100, 40)
+ button.mousePressed(saving);
 }
 
 function draw() {
@@ -30,7 +49,7 @@ text(x, 150, 40);
   text(autoinccost, 300, 260)
   textSize(14);
   text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost:', 250, 190);
-  text('PROGRESS DOESNT SAVE.\nWHEN YOU CLOSE OR REFRESH THE TAB\nYOU LOSE ALL YOUR PROGRESS', 100, 500)
+  text('PROGRESS DOESNT SAVE.\nWHEN YOU CLOSE OR REFRESH THE TAB\nYOU LOSE ALL YOUR PROGRESS\nimplementing save but idk if it works so\nthis still might be true\nyou have to manual save theres no auto save', 100, 500)
 }
 function addnumber() {
   x = x + addnumY;
@@ -57,3 +76,10 @@ function autoinc() {
   }
 }
 
+function saving() {
+   localStorage.setItem("mainnumber", x)
+   localStorage.setItem("upgradenumber", addnumY)
+   localStorage.setItem("haveautoincrement", boughtautoinc)
+   localStorage.setItem("speedofautoincrement", autoincspeed)
+   localStorage.setItem("costofautoincrement", autoinccost)
+}
