@@ -12,10 +12,11 @@ if(!boughtautoinc) {
 }
 var autoincspeed = localStorage.getItem("speedofautoincrement")
 if(!autoincspeed) {
+ autoincspeed = 2000
 }
 var autoinccost = localStorage.getItem("costofautoincrement")
 if(!autoinccost) {
- autoinccost = 0
+ autoinccost = 50
 }
 var autoinccost = 50
 function setup() {
