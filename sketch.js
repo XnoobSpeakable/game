@@ -51,6 +51,7 @@ text(x, 150, 40);
   textSize(14);
   text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost:', 250, 190);
   text('PROGRESS DOESNT AUTO SAVE\nDO NOT FORGOT TO SAVE MANUALLY', 100, 500)
+ textSize(24)
   text('SORRY GAME DOESNT WORK RN ILL FIX IT LATER DONT PLAY', 200, 190);
 }
 function addnumber() {
