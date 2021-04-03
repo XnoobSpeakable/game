@@ -49,7 +49,7 @@ text(x, 150, 40);
   text(autoinccost, 300, 260)
   textSize(14);
   text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost:', 250, 190);
-  text('PROGRESS DOESNT SAVE.\nWHEN YOU CLOSE OR REFRESH THE TAB\nYOU LOSE ALL YOUR PROGRESS\nimplementing save but idk if it works so\nthis still might be true\nyou have to manual save theres no auto save', 100, 500)
+  text('PROGRESS DOESNT AUTO SAVE\nDO NOT FORGOT TO SAVE MANUALLY', 100, 500)
 }
 function addnumber() {
   x = x + addnumY;
