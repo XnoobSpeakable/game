@@ -84,3 +84,6 @@ function saving() {
    localStorage.setItem("speedofautoincrement", autoincspeed)
    localStorage.setItem("costofautoincrement", autoinccost)
 }
+const convertToNumber = val => {
+return Number(val);
+}
