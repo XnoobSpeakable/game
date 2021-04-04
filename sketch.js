@@ -1,20 +1,20 @@
-var x = localStorage.getItem("mainnumber")
+var x = convertToNumber(localStorage.getItem("mainnumber"));
 if(!x) {
  x = 0
 }
-var addnumY = localStorage.getItem("upgradenumber")
+var addnumY = convertToNumber(localStorage.getItem("upgradenumber"));
 if(!addnumY) {
  addnumY = 1
 }
-var boughtautoinc = localStorage.getItem("haveautoincrement")
+var boughtautoinc = convertToNumber(localStorage.getItem("haveautoincrement"));
 if(!boughtautoinc) {
  boughtautoinc = 0
 }
-var autoincspeed = localStorage.getItem("speedofautoincrement")
+var autoincspeed = convertToNumber(localStorage.getItem("speedofautoincremen"));
 if(!autoincspeed) {
  autoincspeed = 2000
 }
-var autoinccost = localStorage.getItem("costofautoincrement")
+var autoinccost = convertToNumber(localStorage.getItem("costofautoincremen"));
 if(!autoinccost) {
  autoinccost = 50
 }
@@ -51,8 +51,6 @@ text(x, 150, 40);
   textSize(14);
   text('automatically increments\nthe number once every second\nupgrading again makes it\ntwice as fast\nCost:', 250, 190);
   text('PROGRESS DOESNT AUTO SAVE\nDO NOT FORGOT TO SAVE MANUALLY', 100, 500)
- textSize(24)
-  text('SORRY GAME DOESNT WORK RN ILL FIX IT LATER DONT PLAY', 200, 190);
 }
 function addnumber() {
   x = x + addnumY;
